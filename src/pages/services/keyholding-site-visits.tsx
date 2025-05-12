@@ -44,10 +44,10 @@ const KeyholdingAndSiteVisits: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Keyholding & Site Visits Services in Gwynedd | MD Property Management</title>
+        <title>Keyholding & Site Visits in Gwynedd | MD Property Management</title>
         <meta 
           name="description" 
-          content="Professional keyholding and site visits services in Gwynedd. We offer alarm response, regular inspections, and property maintenance services." 
+          content="MD Property Management provides 24/7 keyholding, regular site inspections, emergency response & access management in Gwynedd. Secure your property—get a free quote today." 
         />
       </Head>
 

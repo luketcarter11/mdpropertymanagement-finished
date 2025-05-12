@@ -44,8 +44,8 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>MD Property Management - Professional Cleaning & Property Maintenance</title>
-        <meta name="description" content="MD Property Management offers professional cleaning and property maintenance services. Quality service at competitive prices for commercial and residential properties." />
+        <title>MD Property Management | Gwynedd Cleaning & Holiday-Let</title>
+        <meta name="description" content="MD Property Management offers commercial cleaning, holiday-let management, keyholding & site visits across Gwynedd, North Wales. Book your free consultation." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

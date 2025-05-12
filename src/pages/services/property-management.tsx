@@ -45,7 +45,7 @@ const PropertyManagement: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Head>
         <title>Holiday Let Property Management in Gwynedd | MD Property Management</title>
-        <meta name="description" content="Professional holiday let property management services in Gwynedd. We handle maintenance, repairs, and property care for holiday let owners." />
+        <meta name="description" content="MD Property Management offers comprehensive holiday-let property management in Gwynedd: flooring, plumbing, heating, carpentry, general repairs & ongoing maintenance. Get a free quote."/>
       </Head>
 
       <Header />

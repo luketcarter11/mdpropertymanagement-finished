@@ -75,8 +75,8 @@ const Services: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Our Services - MD Property Management</title>
-        <meta name="description" content="Explore our comprehensive range of property management services including commercial cleaning, property cleaning, and maintenance solutions." />
+        <title>MD Property Management Services | North Wales Cleaning & Property Management</title>
+        <meta name="description" content="Explore MD Property Management’s services in North Wales and Gwynedd: commercial cleaning, holiday-let management, property maintenance, keyholding & site visits. Get a free quote."/>
       </Head>
 
       <Header />

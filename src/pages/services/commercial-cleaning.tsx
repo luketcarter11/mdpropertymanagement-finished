@@ -35,8 +35,8 @@ const CommercialCleaning: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Commercial Cleaning Services - MD Property Management</title>
-        <meta name="description" content="Professional commercial cleaning services for businesses. Maintain a pristine and professional environment with our comprehensive cleaning solutions." />
+        <title>Commercial Cleaning in North Wales | MD Property Management</title>
+        <meta name="description" content="MD Property Management delivers expert commercial cleaning across North Wales & Gwynedd. Office, industrial, retail, window, carpet & sanitization. Get a free quote."/>
       </Head>
 
       <Header />

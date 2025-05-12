@@ -44,8 +44,8 @@ const PropertyCleaning: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Holiday Let Cleaning Services - MD Property Management</title>
-        <meta name="description" content="Professional holiday let cleaning services including changeover cleaning, linen hire, and welcome pack services. Keep your holiday property pristine for every guest." />
+        <title>Hoiday Let Cleaning North Wales l& Gwynedd | MD Property Management</title>
+        <meta name="description" content="MD Property Management delivers expert holiday-let cleaning in North Wales & Gwynedd: changeovers, deep cleans and linen & towel hire." />
       </Head>
 
       <Header />

@@ -81,8 +81,8 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Contact Us - MD Property Management</title>
-        <meta name="description" content="Get in touch with MD Property Management for professional cleaning and property maintenance services. Contact us for a free quote." />
+        <title>Contact MD Property Management | North Wales Cleaning & Property Management</title>
+        <meta name="description" content="Contact MD Property Management for commercial cleaning, holiday-let management, keyholding & site visits in North Wales and Gwynedd. Get your free quote today."/>
       </Head>
 
       <Header />
