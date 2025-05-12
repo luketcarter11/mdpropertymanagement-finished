@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { pageMetadata } from '../utils/metadata';
 
 const serviceCards = [
   {
@@ -41,12 +42,19 @@ const serviceCards = [
 ];
 
 const Home: React.FC = () => {
+  const metadata = pageMetadata.home;
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>MD Property Management | Gwynedd Cleaning & Holiday-Let</title>
-        <meta name="description" content="MD Property Management offers commercial cleaning, holiday-let management, keyholding & site visits across Gwynedd, North Wales. Book your free consultation." />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.images[0]} />
       </Head>
 
       <Header />

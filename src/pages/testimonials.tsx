@@ -3,28 +3,98 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { pageMetadata } from '../utils/metadata';
 
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: "Sarah Thompson",
-      role: "Property Owner",
-      company: "Residential Client",
-      content: "MD Property Management has transformed how I maintain my rental properties. Their attention to detail and proactive approach has saved me countless hours and headaches. The team is always professional and responsive.",
+      name: "Janet",
+      date: "29 October 2023",
+      content: "Very professional company - attention to detail amazing, our house always looks fresh, inviting and spotlessly clean on arrival. We have a good working relationship with MD who we always find very helpful. We are lucky we found you!",
       rating: 5
     },
     {
-      name: "David Roberts",
-      role: "Office Manager",
-      company: "Commercial Client",
-      content: "We've been using MD Property Management for our office cleaning and maintenance for over a year now. The consistency and quality of their service is outstanding. They've become an essential part of our business operations.",
+      name: "Lisa",
+      date: "26 October 2023",
+      content: "A friendly and reliable team. MD Property management provide a professional cleaning and laundry service. Great to know that my property is being looked after so well. Thanks MD",
       rating: 5
     },
     {
-      name: "Emma Williams",
-      role: "Business Owner",
-      company: "Retail Space",
-      content: "The level of service provided by MD Property Management is exceptional. Their team is reliable, thorough, and always goes the extra mile. They've helped maintain our retail space to the highest standards.",
+      name: "Sara Caldwell",
+      date: "25 October 2023",
+      content: "Monica and Dave are completely reliable, friendly and work to a high standard. Nothing is too much trouble. We're very pleased that they are looking after our holiday let for us.",
+      rating: 5
+    },
+    {
+      name: "Helen",
+      date: "6 February 2023",
+      content: "Fabulous team of people to work with, prepared to go the extra mile when needed.",
+      rating: 5
+    },
+    {
+      name: "Lee Cunnington",
+      date: "5 February 2023",
+      content: "Great service everytime I've used them! 100% reliable. Professional service and friendly service. Nothing too much hard work. Would recommend. Looking forward to using the service again.",
+      rating: 5
+    },
+    {
+      name: "Dylan",
+      date: "1 February 2023",
+      content: "A good little company who do a good job they very reliable",
+      rating: 5
+    },
+    {
+      name: "Hannah Carey",
+      date: "17 December 2022",
+      content: "Dave, Monica and the rest of the team are excellent. They always respond super quickly to any queries and our guests have been very happy.",
+      rating: 5
+    },
+    {
+      name: "David",
+      date: "10 December 2022",
+      content: "Great service, always happy to help and my property is always spotless.",
+      rating: 5
+    },
+    {
+      name: "Bev Cherrington",
+      date: "10 December 2022",
+      content: "Dave, Monica and team are honest reliable cleaning team who manage our holiday home.",
+      rating: 5
+    },
+    {
+      name: "Abi",
+      date: "10 December 2022",
+      content: "We recently moved to MD property management and wish to express how impressed we are with their service. Reliable, trustworthy and experienced. Our property is well maintained and spotlessly clean. We are so pleased that we found them!",
+      rating: 5
+    },
+    {
+      name: "Denise",
+      date: "29 November 2022",
+      content: "MD Property supported us on our holiday let and offered an excellent cleaning changeover service that we could not fault. They are very reliable in all aspects of their work. We highly recommend MD Property Management Service. Thank you",
+      rating: 5
+    },
+    {
+      name: "Louise",
+      date: "28 November 2022",
+      content: "MD Property Management assisted me to get my property on to holiday letting services. They offer a great service and are very reliable. I took on the property management contract and could not fault their services. I would highly recommend this company.",
+      rating: 5
+    },
+    {
+      name: "Hugh",
+      date: "28 November 2022",
+      content: "Thorough, flexible and responsive company looking after our Snowdonia holiday lets.",
+      rating: 5
+    },
+    {
+      name: "Dave",
+      date: "16 August 2022",
+      content: "MD offer an outstanding property management services. We have had a few unusual problems but they've taken them all in their stride. They keep us up to date on all matters and are very proactive.",
+      rating: 5
+    },
+    {
+      name: "Daniel",
+      date: "13 August 2022",
+      content: "MD property management are a fantastic partner in helping me run a successful holiday let business. As a first time holiday let owner I have received support from MD property management that has exceeded my expectations with guidance, adhoc help for those issues that crop up unexpectedly and 5 star cleaning all helping us to provide a fantastic service to our guests. I fully recommend MD property management as a comprehensive and 100% reliable changeover service. Thanks to all the MD team",
       rating: 5
     }
   ];
@@ -46,11 +116,19 @@ const Testimonials: React.FC = () => {
     );
   };
 
+  const metadata = pageMetadata.testimonials;
+
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Client Testimonials - MD Property Management</title>
-        <meta name="description" content="Read what our clients say about MD Property Management's cleaning and maintenance services. Real testimonials from satisfied customers." />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.images[0]} />
       </Head>
 
       <Header />
@@ -64,7 +142,7 @@ const Testimonials: React.FC = () => {
                 Client Testimonials
               </h1>
               <p className="text-xl">
-                Don't just take our word for it - hear what our clients have to say about our services
+                Read what our satisfied clients have to say about our services
               </p>
             </div>
           </div>
@@ -86,8 +164,7 @@ const Testimonials: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">{testimonial.name}</h3>
-                      <p className="text-gray-600">{testimonial.role}</p>
-                      <p className="text-gray-500 text-sm">{testimonial.company}</p>
+                      <p className="text-gray-500 text-sm">{testimonial.date}</p>
                     </div>
                   </div>
                   <div className="mb-4">
@@ -105,20 +182,20 @@ const Testimonials: React.FC = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
               <div>
-                <div className="text-4xl font-bold text-blue-800 mb-2">98%</div>
-                <p className="text-gray-600">Client Satisfaction</p>
+                <div className="text-4xl font-bold text-blue-800 mb-2">100%</div>
+                <p className="text-gray-600">5-Star Reviews</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-800 mb-2">200+</div>
-                <p className="text-gray-600">Active Clients</p>
+                <div className="text-4xl font-bold text-blue-800 mb-2">15+</div>
+                <p className="text-gray-600">Recent Reviews</p>
               </div>
               <div>
                 <div className="text-4xl font-bold text-blue-800 mb-2">5★</div>
                 <p className="text-gray-600">Average Rating</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-800 mb-2">10+</div>
-                <p className="text-gray-600">Years Experience</p>
+                <div className="text-4xl font-bold text-blue-800 mb-2">2022+</div>
+                <p className="text-gray-600">Serving Since</p>
               </div>
             </div>
           </div>

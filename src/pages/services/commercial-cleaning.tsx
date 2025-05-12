@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import TestimonialShowcase from '../../components/TestimonialShowcase';
 
 const CommercialCleaning: React.FC = () => {
   const features = [
@@ -134,6 +135,9 @@ const CommercialCleaning: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <TestimonialShowcase />
 
         {/* CTA Section */}
         <section className="py-16 bg-blue-800 text-white">
